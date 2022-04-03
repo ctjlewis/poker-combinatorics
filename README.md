@@ -1,6 +1,6 @@
 ---
-title: "Simple Poker Hand Probability"
-author: "C. Lewis (@ctjlewis)"
+title: Simple Poker Hand Probability
+author: C. Lewis (@ctjlewis)
 date: April 3, 2022
 
 abstract: >
@@ -31,6 +31,7 @@ P(S, R, D, E, H) = \frac{\dbinom{4}{S}\dbinom{13}{R}\dbinom{52 - E}{H - D}}{\dbi
 $$
 
 > *Note that this will include higher value hands, e.g. $P_{OAK}$ below will not exclude chance of drawing FH, straight, etc.*
+
 
 ## $N$-of-a-kind (or better)
 
