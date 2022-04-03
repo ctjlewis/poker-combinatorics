@@ -16,8 +16,6 @@ header-includes:
     linkcolor=darkgray,
     allbordercolors={0 0 0},
     pdfborderstyle={/S/U/W 1}}
-    
-  # - \newcommand{\hideFromPandoc}[1]{#1}\hideFromPandoc{\let\Begin\begin\let\End\end}
 ---
 
 
