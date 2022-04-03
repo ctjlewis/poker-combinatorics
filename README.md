@@ -26,9 +26,11 @@ header-includes:
 
 The probability of drawing a hand with $D$ cards of $S$ chosen suits and $R$ chosen ranks, excluding $E$ cards from the deck before drawing the remainder of an $H$-card hand, is estimated as follows:
 
+
 $$
 P(S, R, D, E, H) = \frac{\dbinom{4}{S}\dbinom{13}{R}\dbinom{52 - E}{H - D}}{\dbinom{52}{H}}
 $$
+
 
 > *Note that this will include higher value hands, e.g. $P_{OAK}$ below will not exclude chance of drawing FH, straight, etc.*
 
@@ -36,6 +38,7 @@ $$
 ## $N$-of-a-kind (or better)
 
 The probability of drawing an $N$-of-a-kind (or better) in an $H$-card hand is estimated by choosing $N$ cards from 1 rank and $N$ suits, excluding the 4 cards of the given rank from the rest of the hand:
+
 
 $$
 P_{OAK}(N, H) = P(N, 1, N, 4, H)
@@ -49,9 +52,11 @@ Ex.: Probability of 4OAK on a 5-card hand is estimated by $P_{OAK}(4, 5) \approx
 
 The probability of drawing an $N$-card flush (or better) in an $H$-card hand is estimated by choosing $N$ cards from 1 suit and $N$ ranks, excluding the 13 cards of that suit from the rest of the draw:
 
+
 $$
 P_{FLUSH}(N, H) = P(1, N, N, 13, H)
 $$
+
 
 Ex.: Probability of a 3-card flush in a 7-card hand is estimated by $P_{FLUSH}(3, 7) \approx 70\%$.
 
